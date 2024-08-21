@@ -1,0 +1,156 @@
+.header{
+    width: 100%;
+    background-color: #232a31;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 20px;
+
+}
+
+.logo{
+    width: 50px;
+}
+
+.navbar-items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    text-transform: uppercase;
+    
+}
+
+.navbar-items li a{
+    color: white;
+    transition: color 0.3s ease;
+    
+}
+
+.navbar-items li a:hover{
+    color: #000000;
+}
+
+#login{
+    background-color: #0fbd49;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner{
+    background-image: url('/img/mainbanner.png');
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    padding: 50px 8px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.banner h1, .banner strong{
+    color: #fff;
+    text-align: center;
+}
+
+
+.banner h1{
+    font-size: 54px;
+}
+
+.banner strong{
+    font-size: 20px;
+}
+
+.fa-shield-alt{
+    color: #0fbd49;
+    font-size: 40px;
+}
+
+.fa-rocket{
+    color: red;
+    font-size: 40px;
+}
+
+.fa-comments{
+    color: yellow;
+    font-size: 40px;
+}
+.informacoes1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 12px;
+    padding: 25px;
+    
+}
+
+.informacoes1 li{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.planos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-preco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+    gap: 20px;
+
+}
+
+.card-preco li{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #232a31;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.card-preco footer{
+    width: 100%;
+}
+
+.card-preco button{
+    background-color: #0fbd49;
+    color: white;
+    width: 100%;
+    height: 30px;
+    border-bottom: 4px;
+    cursor: pointer;
+}
+
