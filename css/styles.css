@@ -88,15 +88,17 @@
     color: yellow;
     font-size: 40px;
 }
+
 .informacoes1{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 10px;
     text-align: center;
     font-size: 12px;
-    padding: 25px;
+    padding:  25px 0;
+    flex-wrap: wrap;
     
 }
 
@@ -104,6 +106,15 @@
     display: flex;
     flex-direction: column;
     gap:10px;
+}
+
+.info-gap{
+    max-width: 300px;
+}
+
+.informacoes1 p{
+    color: rgb(0, 0, 0);
+    text-align: justify;
 }
 
 .planos{
@@ -116,29 +127,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
     text-align: center;
+    width: 100%;
+    gap: 100px;
+}
+
+.card-li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d0d8d3;
+    border-radius: 5px;
+    max-width: 300PX;
+    
+}
+
+.cards-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 .card-preco{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    
+    width: 100%;
+    justify-content: space-around;
     gap: 20px;
-
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 1 1 1;
+    flex-wrap: wrap;
 }
 
-.card-preco li{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: #232a31;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
+.card-preco p{
+    color: rgb(0, 0, 0);
     text-align: center;
-    
+    font-size: 14px;
 }
 
 .card-preco footer{
@@ -149,8 +177,193 @@
     background-color: #0fbd49;
     color: white;
     width: 100%;
-    height: 30px;
-    border-bottom: 4px;
+    height: 50px;
+    border-radius: 0 0 5px 5px;
     cursor: pointer;
 }
 
+.preco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: #0fbd49;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-bottom: 10PX;
+}
+
+.preco-red{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+.interior-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.cards-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #212c3b;
+    width: 100%;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+}
+
+.cards-header h3{
+    margin-top: 5PX;
+    color: white;
+    font-size: 18px;
+}
+
+.cards-header p{
+    color: white;
+    font-size: 15px;
+}
+
+.buscar-dominio{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.div-dominio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    background-color: #232a31;
+    gap: 20px;
+    width: 100%;
+}
+
+.div-dominio h2, p{
+    color: #fff;
+}
+
+.div-dominio input{
+    width: 50%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.div-dominio button{
+    background-color: #0fbd49;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+}
+
+.footer-social{
+    display: flex;
+    gap: 40px;
+}
+
+
+.fa-facebook, .fa-twitter, .fa-instagram{
+    color: #000000;
+    font-size: 30px;
+}
+
+
+.div-input{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.div-input input{
+    flex: 1;
+}
+
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.footer-form textarea{
+    width: 100%;
+    
+}
+
+.footer-contato p, h2{
+    color: #000000;
+}
+
+.footer-contato button{
+    background-color: #0fbd49;
+    color: white;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-contato{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(76, 78, 78);
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.footer-contato input{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    height: 40px;
+
+}
+
+.footer-ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-ul p{
+    color: black;
+    font-size: 14px;
+}
